@@ -2,6 +2,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './components/Header.js';
 import Body from './components/Body.js';
+import Qr from './components/Qr.js';
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
         <Body />
       </View>
       <View style={styles.qrContainer}>
-        <Text>3</Text>
+        <Qr />
       </View>
     </View>
   );
