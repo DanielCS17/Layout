@@ -1,17 +1,20 @@
 
 import { StyleSheet, Text, View } from 'react-native';
+import Header from './components/Header.js';
+import Body from './components/Body.js';
+import Qr from './components/Qr.js';
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text>1</Text>
+        <Header />
       </View>
       <View style={styles.body}>
-        <Text>2</Text>
+        <Body />
       </View>
       <View style={styles.qrContainer}>
-        <Text>3</Text>
+        <Qr />
       </View>
     </View>
   );
@@ -27,14 +30,24 @@ const styles = StyleSheet.create({
 
   header: {
     flex: 1,
+    flexDirection: 'row',
+    backgroundColor: 'aliceblue',
+    width: '100%'
   },
 
   body: {
-    flex: 2.5,
+    flex: 2.2,
+    width: '100%',
+    alignItems: 'center',
+    backgroundColor: '#ffffeb'
   },
 
   qrContainer: {
-    flex: 1.5,
+    flex: 1.8,
+    backgroundColor: '#ecd6c0',
+    width: '100%'
   },
 
 });
+
+export default App
