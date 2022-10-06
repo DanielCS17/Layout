@@ -1,11 +1,12 @@
 
 import { StyleSheet, Text, View } from 'react-native';
+import Header from './components/Header.js';
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text>1</Text>
+        <Header />
       </View>
       <View style={styles.body}>
         <Text>2</Text>
@@ -27,14 +28,22 @@ const styles = StyleSheet.create({
 
   header: {
     flex: 1,
+    flexDirection: 'row',
+    backgroundColor: 'aliceblue',
+    width: '100%'
   },
 
   body: {
     flex: 2.5,
+    width: '100%'
   },
 
   qrContainer: {
     flex: 1.5,
+    backgroundColor: 'lightgrey',
+    width: '100%'
   },
 
 });
+
+export default App
