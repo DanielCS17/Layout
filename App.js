@@ -1,6 +1,7 @@
 
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './components/Header.js';
+import Body from './components/Body.js';
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
         <Header />
       </View>
       <View style={styles.body}>
-        <Text>2</Text>
+        <Body />
       </View>
       <View style={styles.qrContainer}>
         <Text>3</Text>
@@ -34,13 +35,15 @@ const styles = StyleSheet.create({
   },
 
   body: {
-    flex: 2.5,
-    width: '100%'
+    flex: 2.2,
+    width: '100%',
+    alignItems: 'center',
+    backgroundColor: '#ffffeb'
   },
 
   qrContainer: {
-    flex: 1.5,
-    backgroundColor: 'lightgrey',
+    flex: 1.8,
+    backgroundColor: '#ecd6c0',
     width: '100%'
   },
 
